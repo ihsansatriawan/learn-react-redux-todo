@@ -16,7 +16,7 @@ export function TodoList(props) {
       <input type='text' placeholder='Add todo' />
       <ul className='todo__list'>
         {todos.map(t => (
-          <li key={t.id} className='todo__item'>
+          <li key={t.get('id')} className='todo__item'>
             <Todo todo={t} />
           </li>
         ))}
